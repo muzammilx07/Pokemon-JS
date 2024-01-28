@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Collection</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon Collection</h1>
+        <div class="searchtab">
+            <div class="search-container">
+                <label for="pokemonSearch" class="sr-only">Search Pokemon</label>
+                <input type="search" id="pokemonSearch" placeholder="Enter Pokemon name ">
+                <button class="searchBtn">Search</button>
+                <button class="resetBtn" onclick="resetPage()">Reset</button>
+            </div>
+            <select class="pokemonTypeSelect" id="pokemonTypeSelect"></select>
+            <button class="searchType">Search By Type</button>
+        </div>
+    </div>
+    <div class="pokemonDisplay">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

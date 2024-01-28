@@ -1,0 +1,134 @@
+body {
+    background: #232323;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.searchtab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+label {
+    display: none;
+}
+
+input {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #444; /* Darker background */
+    color: #fff; /* Text color */
+    width: 200px; /* Adjust the width as needed */
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    width: 150px; /* Adjust the width as needed */
+}
+
+button {
+    padding: 10px 15px;
+    margin:2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #008080; /* Button color */
+    color: #fff; /* Button text color */
+}
+
+
+.pokemonDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pokemonCard {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    transform-style: preserve-3d; 
+    transition: all 0.8s ease;
+}
+
+.card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+  .card-number {
+    margin: 10px;
+  }
+  
+  .card-image {
+    width: 80%; 
+    height: auto;
+    margin: 0 auto; 
+  }
+  
+  .card-name {
+    margin: 10px;
+    color: #333;
+  }
+  
+  .card-abilities {
+    margin: 10px;
+    color: #333;
+  }
+  
+  /* Add more styling as needed */
+  
+
+.pokemonCard:hover {
+    transform: rotateY(180deg);
+}
+
