@@ -126,6 +126,7 @@ function createPokemonCard(container, pokemonData, bgColor) {
   cardFront.classList.add("card-front");
   cardFront.innerHTML = `
     <div class="card-number card-info">${cardNumber}</div>
+    <h3 class="card-name">${pokemonData.name}</h3>
     <img class="card-image" src="${pokemonData.sprites && pokemonData.sprites.front_default ? pokemonData.sprites.front_default : 'https://example.com/placeholder_image.png'}" alt="${pokemonData.name}">
   `;
   
